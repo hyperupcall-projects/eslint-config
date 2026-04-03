@@ -5,10 +5,10 @@
 	"description": "Edwin's ESLint configuration.",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fox-land/eslint-config-hyperupcall.git"
+		"url": "https://github.com/hyperupcall-projects/eslint-config"
 	},
 	"bugs": {
-		"url": "https://github.com/fox-land/eslint-config-hyperupcall/issues"
+		"url": "https://github.com/hyperupcall-projects/eslint-config/issues"
 	},
 	"author": "Edwin Kofler <edwin@kofler.dev> (https://edwinkofler.com)",
 	"license": "MPL-2.0",
@@ -16,9 +16,8 @@
 	"main": "./index.js",
 	"scripts": {
 		"typecheck": "tsc --project ./tsconfig.json",
-		"format": "prettier --check .",
-		"format:fix": "prettier --write .",
-		"lint": "eslint ."
+		"format": "hyperupcall-scripts-nodejs format",
+		"lint": "hyperupcall-scripts-nodejs lint"
 	},
 	"peerDependencies": {
 		"@eslint-community/eslint-plugin-eslint-comments": ">=4.0.0",
@@ -41,7 +40,7 @@
 		"globals": "^17.0.0"
 	},
 	"devDependencies": {
-		"@hyperupcall/scripts-nodejs": "0.7.0",
+		"@hyperupcall/scripts-nodejs": "0.9.0",
 		"@types/node": "^25.0.6",
 		"typescript": "^5.9.3"
 	},

@@ -134,11 +134,20 @@ export default defineConfig([
 				'error',
 				{
 					groups: ['r', 'g', 'b'],
-					customGroups: {
-						r: '^r$',
-						g: '^g$',
-						b: '^b$',
-					},
+					customGroups: [
+						{
+							groupName: 'r',
+							match: '^r$',
+						},
+						{
+							groupName: 'g',
+							match: '^g$',
+						},
+						{
+							groupName: 'b',
+							match: '^b$',
+						},
+					],
 					useConfigurationIf: {
 						allNamesMatchPattern: '^r|g|b$',
 					},
